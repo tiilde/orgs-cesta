@@ -1,29 +1,26 @@
 import React from "react";
-import { View, Image, StyleSheet, TouchableOpacity } from "react-native";
+import { Image, StyleSheet, View, TouchableOpacity } from "react-native";
 
 import Texto from "../../../components/Texto";
 
-
-export default function Detalhes({nome, logoFazenda, nomeFazenda, descricao, preco, botao}) {
+export default function Detalhes({ nome,logoFazenda, nomeFazenda, descricao, preco, botao,}) {
     return <>
-            <Texto style={estilos.nomeCesta}> { nome }</Texto>
-
+            <Texto style={estilos.nome}>{nome}</Texto>
             <View style={estilos.fazenda}>
-                <Image source={ logoFazenda } style={estilos.imagemFazenda}></Image>
-                <Texto style={estilos.nomeFazenda}> { nomeFazenda }</Texto>
+                <Image source={logoFazenda} style={estilos.imagemFazenda} />
+                <Texto style={estilos.nomeFazenda}>{nomeFazenda}</Texto>
             </View>
-
-            <Texto style={estilos.descricao}> { descricao }</Texto>
-            <Texto style={estilos.preco}>{ preco }</Texto>
+            <Texto style={estilos.descricao}>{descricao}</Texto>
+            <Texto style={estilos.preco}>{preco}</Texto>
 
             <TouchableOpacity style={estilos.botao} onPress={() => {}}>
-                <Texto style={estilos.textoBotao}>{ botao }</Texto>
+                <Texto style={estilos.textoBotao}>{botao}</Texto>
             </TouchableOpacity>
         </>
 }
 
 const estilos = StyleSheet.create({
-    nomeCesta: {
+    nome: {
         color: "#464646",
         fontSize: 26,
         lineHeight: 42,
@@ -62,9 +59,9 @@ const estilos = StyleSheet.create({
     },
     textoBotao: {
         textAlign: "center",
-        color: "#FFFFFF",
+        color: "#ffffff",
         fontSize: 16,
         lineHeight: 26,
         fontWeight: "bold",
-    }
+    },
 });
