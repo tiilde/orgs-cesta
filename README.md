@@ -1,4 +1,4 @@
-<h2> React Native: começando do zero React Native: começando do zero</h2>
+<h2> React Native: começando do zero </h2>
 Aplicação simples, feita durante o curso da Alura de primeiros com React Native! :3
 
 
